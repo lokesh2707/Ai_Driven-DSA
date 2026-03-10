@@ -1,0 +1,16 @@
+{
+    "name": "ai-driven-dsa",
+    "version": "1.0.0",
+    "description": "Unified React and Express Deployment for AI Driven DSA platform",
+    "scripts": {
+        "start": "cd backend && npm start",
+        "build": "cd frontend && npm install && npm run build && cd ../backend && npm install",
+        "dev:backend": "cd backend && npm run dev",
+        "dev:frontend": "cd frontend && npm run dev",
+        "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
